@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:padding="16dp">
+
+        <EditText
+            android:id="@+id/name_student_popup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Student Name"
+            android:padding="16dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="16dp"/>
+
+        <EditText
+            android:id="@+id/regNo_student_popup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Student ID"
+            android:padding="16dp"
+            android:layout_marginBottom="5dp"/>
+
+        <!-- Uncomment the following section if the mobile number is needed
+        <EditText
+            android:id="@+id/mobileNo_student_popup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Mobile No"
+            android:inputType="phone"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp"/>
+        -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="12dp"
+            android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/cancel_btn_popup"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:text="Cancel"
+                    android:textSize="16sp"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:textColor="@color/theme_light"
+                    android:background="@color/white"
+                    android:layout_marginEnd="3dp"
+                    android:gravity="center"
+                    tools:ignore="UnusedAttribute"/>
+
+                <TextView
+                    android:id="@+id/add_btn_popup"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:text="Add"
+                    android:textSize="16sp"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:background="@color/white"
+                    android:textColor="@color/theme_light"
+                    android:layout_marginStart="3dp"
+                    android:gravity="center"
+                    tools:ignore="UnusedAttribute"/>
+        </LinearLayout>
+</LinearLayout>

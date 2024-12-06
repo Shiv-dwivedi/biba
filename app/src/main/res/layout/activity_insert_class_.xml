@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/MainBack"
+    tools:context=".Insert_class_Activity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_insert_class"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="Create Class"/>
+
+    <EditText
+        android:id="@+id/subjectName_createClass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_back"
+        android:padding="16dp"
+        android:layout_marginBottom="12dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:focusedByDefault="true"
+        android:hint="Subject name"/>
+
+    <EditText
+        android:id="@+id/className_createClass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_back"
+        android:padding="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:focusedByDefault="true"
+        android:hint="Batch Name"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select theme :"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:textColor="@color/text_color_dark"
+        android:textSize="18dp"
+        android:layout_marginTop="12dp"/>
+
+    <RadioGroup
+        android:id="@+id/group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp">
+
+        <RadioButton
+            android:id="@+id/button1"
+            android:layout_width="137dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@drawable/gradient_background"
+            android:gravity="left"
+            android:padding="8dp"
+            android:text="Blue"/>
+
+        <RadioButton
+            android:id="@+id/button2"
+            android:layout_width="137dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@drawable/gradient_background"
+            android:gravity="left"
+            android:padding="8dp"
+            android:text="Green"/>
+
+        <RadioButton
+            android:id="@+id/button3"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@drawable/gradient_background"
+            android:gravity="left"
+            android:padding="8dp"
+            android:text="Yellow"/>
+
+        <RadioButton
+            android:id="@+id/button4"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@drawable/gradient_background"
+            android:gravity="left"
+            android:padding="8dp"
+            android:text="Cyan"/>
+
+        <RadioButton
+            android:id="@+id/button5"
+            android:layout_width="136dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@drawable/gradient_background"
+            android:gravity="left"
+            android:padding="8dp"
+            android:text="Pink"/>
+
+        <RadioButton
+            android:id="@+id/button6"
+            android:layout_width="134dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:background="@drawable/gradient_background"
+            android:gravity="left"
+            android:padding="8dp"
+            android:text="White"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/button_createClass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="create"
+        android:background="@drawable/gradient_background"
+        android:padding="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center"/>
+
+</LinearLayout>
